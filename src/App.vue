@@ -32,6 +32,7 @@
 
 <script lang="ts">
   import { Options, Vue } from 'vue-class-component';
+
   import FooterSite from '@/components/FooterSite.vue'; // @ is an alias to /src
   import HeaderSite from '@/components/HeaderSite.vue';
   import PagePreloader from '@/components/PagePreloader.vue';
