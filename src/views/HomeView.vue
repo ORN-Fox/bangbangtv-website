@@ -2,7 +2,7 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="../assets/img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="/img/hero/hero-1.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -16,7 +16,7 @@
                 </div>
             </div>
 
-            <div class="hero__item set-bg" data-setbg="../assets/img/hero/hero-2.jpg">
+            <div class="hero__item set-bg" data-setbg="/img/hero/hero-2.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="hero__item set-bg" data-setbg="../assets/img/hero/hero-3.jpg">
+            <div class="hero__item set-bg" data-setbg="/img/hero/hero-3.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -390,6 +390,10 @@
 
 <script lang="ts">
   import { Options, Vue } from 'vue-class-component';
+  import $ from 'jquery';
+  import 'owl.carousel';
+  import 'owl.carousel/dist/assets/owl.carousel.css';
+
   import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
   @Options({
@@ -398,4 +402,42 @@
     },
   })
   export default class HomeView extends Vue {}
+
+    $(window).on('load', function () {
+        /*------------------
+            Background Set
+        --------------------*/
+        $('.set-bg').each(function (_index, element) {
+            let bg = $(element).data('setbg');
+            console.log('bg', bg);
+
+            $(element).css('background-image', 'url(' + bg + ')');
+        });
+
+        /*------------------
+            Hero Slider
+        --------------------*/
+        ($('.hero__slider') as any).owlCarousel({
+            loop: true,
+            dots: true,
+            mouseDrag: false,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            items: 1,
+            margin: 0,
+            smartSpeed: 1200,
+            autoHeight: false,
+            autoplay: true,
+        });
+
+        // let dot = $('.hero__slider .owl-dot');
+        // dot.each(function (element: any) {
+        //     let index: any = $(element).index() + 1;
+        //     if (index < 10) {
+        //         $(element).html('0').append(index);
+        //     } else {
+        //         $(element).html(index);
+        //     }
+        // });
+    });
 </script>

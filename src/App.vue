@@ -8,14 +8,6 @@
 </template>
 
 <style lang="scss">
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-// }
-
 // nav {
 //   padding: 30px;
 
@@ -32,10 +24,14 @@
 
 <script lang="ts">
   import { Options, Vue } from 'vue-class-component';
+  import $ from 'jquery';
 
   import FooterSite from '@/components/FooterSite.vue'; // @ is an alias to /src
   import HeaderSite from '@/components/HeaderSite.vue';
   import PagePreloader from '@/components/PagePreloader.vue';
+
+  (window as any).$ = $;
+  (window as any).jQuery = $;
 
   @Options({
     components: {
