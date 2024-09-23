@@ -211,7 +211,7 @@
     <!-- Counter Section End -->
 
     <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="../assets/img/team-bg.jpg">
+    <section class="team spad set-bg" data-setbg="/img/team-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -224,7 +224,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="../assets/img/team/redlink6.png">
+                    <div class="team__item set-bg" data-setbg="/img/team/redlink6.png">
                         <div class="team__item__text">
                             <h4>Red Link 6</h4>
                         </div>
@@ -232,7 +232,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="../assets/img/team/maaskate.png">
+                    <div class="team__item team__item--second set-bg" data-setbg="/img/team/maaskate.png">
                         <div class="team__item__text">
                             <h4>oO MAASKATE Oo</h4>
                         </div>
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="../assets/img/team/bangbang6.png">
+                    <div class="team__item team__item--third set-bg" data-setbg="/img/team/bangbang6.png">
                         <div class="team__item__text">
                             <h4>Bang Bang 6</h4>
                         </div>
