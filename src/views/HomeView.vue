@@ -409,8 +409,6 @@
         --------------------*/
         $('.set-bg').each(function (_index, element) {
             let bg = $(element).data('setbg');
-            console.log('bg', bg);
-
             $(element).css('background-image', 'url(' + bg + ')');
         });
 
@@ -430,14 +428,14 @@
             autoplay: true,
         });
 
-        // let dot = $('.hero__slider .owl-dot');
-        // dot.each(function (element: any) {
-        //     let index: any = $(element).index() + 1;
-        //     if (index < 10) {
-        //         $(element).html('0').append(index);
-        //     } else {
-        //         $(element).html(index);
-        //     }
-        // });
+        let dot = $('.hero__slider .owl-dot');
+        dot.each(function (_index, element) {
+            let index: any = $(element).index() + 1;
+            if (index < 10) {
+                $(element).html('0').append(index);
+            } else {
+                $(element).html(index);
+            }
+        });
     });
 </script>
