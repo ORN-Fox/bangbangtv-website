@@ -393,6 +393,7 @@
   import $ from 'jquery';
   import 'owl.carousel';
   import 'owl.carousel/dist/assets/owl.carousel.css';
+  import Masonry from 'masonry-layout';
 
   import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
@@ -435,6 +436,13 @@
                 } else {
                     $(element).html(index);
                 }
+            });
+
+            // Masonary
+            new Masonry('.work__gallery', {
+                itemSelector: '.work__item',
+                columnWidth: '.grid-sizer',
+                gutter: 10
             });
         }
   }
