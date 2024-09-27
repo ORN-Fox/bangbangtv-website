@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <router-link to="/"><img src="../assets/img/logo.webp" alt=""></router-link>
+                        <router-link to="/"><img src="../assets/img/logo.webp" alt="" style="width: 6rem;"></router-link>
                     </div>
                 </div>
 

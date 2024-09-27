@@ -58,6 +58,15 @@
     margin-bottom: 20px;
   }
 
+  .footer__option__logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    img {
+      width: 6rem;
+    }
+  }
+
   .read__more {
       font-size: 16px;
       color: $white-color;

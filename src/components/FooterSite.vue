@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 text-center">
                         <div class="footer__option__item">
-                            <router-link to="/"><img src="../assets/img/logo.webp" alt="" style="width: 10rem;"></router-link>
+                            <router-link to="/" class="footer__option__logo"><img src="../assets/img/logo.webp" alt=""></router-link>
                             <h5>BangBangTV</h5>
                         </div>
                     </div>
