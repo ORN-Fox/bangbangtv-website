@@ -107,7 +107,7 @@
     <section class="work">
         <div class="work__gallery">
             <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="../assets/img/work/work-1.jpg">
+            <div class="work__item wide__item set-bg" data-setbg="/img/work/work-1.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
@@ -118,15 +118,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="../assets/img/work/work-2.jpg">
+            <div class="work__item small__item set-bg" data-setbg="/img/work/work-2.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="../assets/img/work/work-3.jpg">
+            <div class="work__item small__item set-bg" data-setbg="/img/work/work-3.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item large__item set-bg" data-setbg="../assets/img/work/work-4.jpg">
+            <div class="work__item large__item set-bg" data-setbg="/img/work/work-4.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
@@ -137,15 +137,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="../assets/img/work/work-5.jpg">
+            <div class="work__item small__item set-bg" data-setbg="/img/work/work-5.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="../assets/img/work/work-6.jpg">
+            <div class="work__item small__item set-bg" data-setbg="/img/work/work-6.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item wide__item set-bg" data-setbg="../assets/img/work/work-7.jpg">
+            <div class="work__item wide__item set-bg" data-setbg="/img/work/work-7.jpg">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
@@ -368,7 +368,7 @@
     <!-- Latest Blog Section End -->
 
     <!-- Call To Action Section Begin -->
-    <section class="callto spad set-bg" data-setbg="../assets/img/callto-bg.jpg">
+    <section class="callto spad set-bg" data-setbg="/img/callto-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -401,41 +401,41 @@
       HelloWorld,
     },
   })
-  export default class HomeView extends Vue {}
+  export default class HomeView extends Vue {
+        mounted() {
+            /*------------------
+                Background Set
+            --------------------*/
+            $('.set-bg').each(function (_index, element) {
+                let bg = $(element).data('setbg');
+                $(element).css('background-image', 'url(' + bg + ')');
+            });
 
-    $(window).on('load', function () {
-        /*------------------
-            Background Set
-        --------------------*/
-        $('.set-bg').each(function (_index, element) {
-            let bg = $(element).data('setbg');
-            $(element).css('background-image', 'url(' + bg + ')');
-        });
+            /*------------------
+                Hero Slider
+            --------------------*/
+            ($('.hero__slider') as any).owlCarousel({
+                loop: true,
+                dots: true,
+                mouseDrag: false,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                items: 1,
+                margin: 0,
+                smartSpeed: 1200,
+                autoHeight: false,
+                autoplay: true,
+            });
 
-        /*------------------
-            Hero Slider
-        --------------------*/
-        ($('.hero__slider') as any).owlCarousel({
-            loop: true,
-            dots: true,
-            mouseDrag: false,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            items: 1,
-            margin: 0,
-            smartSpeed: 1200,
-            autoHeight: false,
-            autoplay: true,
-        });
-
-        let dot = $('.hero__slider .owl-dot');
-        dot.each(function (_index, element) {
-            let index: any = $(element).index() + 1;
-            if (index < 10) {
-                $(element).html('0').append(index);
-            } else {
-                $(element).html(index);
-            }
-        });
-    });
+            let dot = $('.hero__slider .owl-dot');
+            dot.each(function (_index, element) {
+                let index: any = $(element).index() + 1;
+                if (index < 10) {
+                    $(element).html('0').append(index);
+                } else {
+                    $(element).html(index);
+                }
+            });
+        }
+  }
 </script>
