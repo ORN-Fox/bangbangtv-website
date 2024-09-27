@@ -1,4 +1,6 @@
 <template>
+    <BreadcrumbSite pageTitle="A propos"/>
+
     <!-- About Section Begin -->
     <section class="about spad">
         <div class="container">
@@ -63,6 +65,14 @@
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
     import $ from 'jquery';
+
+    import BreadcrumbSite from '@/components/BreadcrumbSite.vue'; // @ is an alias to /src
+
+    @Options({
+        components: {
+            BreadcrumbSite,
+        },
+    })
     export default class AboutView extends Vue {
         mounted() {
             /*------------------
