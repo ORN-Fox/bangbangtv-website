@@ -382,10 +382,6 @@
         </div>
     </section>
     <!-- Call To Action Section End -->
-
-  <!-- <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div> -->
 </template>
 
 <script lang="ts">
@@ -395,13 +391,6 @@
   import 'owl.carousel/dist/assets/owl.carousel.css';
   import Masonry from 'masonry-layout';
 
-  import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-  @Options({
-    components: {
-      HelloWorld,
-    },
-  })
   export default class HomeView extends Vue {
         mounted() {
             /*------------------
