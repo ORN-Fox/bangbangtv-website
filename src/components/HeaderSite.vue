@@ -28,8 +28,8 @@
                         </nav>
 
                         <div class="header__nav__social">
-                            <a href="https://www.facebook.com/bangbangtv" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@BangBangTV" target="_blank" rel="noopener"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://www.facebook.com/bangbangtv" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@BangBangTV" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
