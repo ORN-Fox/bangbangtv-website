@@ -13,17 +13,14 @@
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
                                 <li><router-link to="/about">A propos</router-link></li>
-                                <li><router-link to="/projects">Nos réalisations</router-link></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="#">Pages</a>
+                                <li>
+                                    <a href="#">Nos réalisations</a>
                                     <ul class="dropdown">
-                                        <li><a href="./about.html">About</a></li>
-                                        <li><a href="./portfolio.html">Nos réalisations</a></li>
-                                        <li><a href="./blog.html">Blog</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><router-link to="/projects/machinima">Machinima</router-link></li>
+                                        <li><router-link to="/projects/assembly">Montages</router-link></li>
+                                        <li><router-link to="/projects/others">Autres</router-link></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
 
