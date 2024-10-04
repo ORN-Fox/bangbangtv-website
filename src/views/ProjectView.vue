@@ -84,7 +84,7 @@
                     this.loadMachinimas();
                     break;
 
-                case "assembly":
+                case "montages":
                     this.loadMontages();
                     break;
 
@@ -162,12 +162,18 @@
 
         private loadMontages() {
             this.categories = [
+                new Category('Gameplay', 'gameplay'),
                 new Category('Autres', 'other')
             ];
 
             this.videos = [
                 new Video('other', 'La Vie est un jeu', 'V96XgahsEk0', ['Halo Reach']),
-                new Video('other', 'Hommage à Halo 3', 'p5txX5Y44IU', ['Halo 3'])
+                new Video('gameplay', 'Une Beta Reach en fun', '7NOjawuqIDg', ['Halo Reach']),
+                new Video('gameplay', 'Hommage à Halo 3', 'p5txX5Y44IU', ['Halo 3']),
+                new Video('gameplay', 'The Big Bang Theory', 'PiEDiLkoafA', ['Halo 3']),
+                new Video('gameplay', 'La Bang Bang Team', '7IJ0oTtgnco', ['Halo 3']),
+                new Video('gameplay', 'Warthog poweR', '1EsOp9wEgOg', ['Halo 3']),
+                new Video('gameplay', 'Noscope Brothers', 'k87bBgwC0yo', ['Halo 3'])
             ];
         }
 

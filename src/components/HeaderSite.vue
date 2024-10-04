@@ -17,7 +17,7 @@
                                     <a href="#">Nos réalisations</a>
                                     <ul class="dropdown">
                                         <li><router-link to="/projects/machinima">Machinima</router-link></li>
-                                        <li><router-link to="/projects/assembly">Montages</router-link></li>
+                                        <li><router-link to="/projects/montages">Montages</router-link></li>
                                         <li><router-link to="/projects/others">Autres</router-link></li>
                                     </ul>
                                 </li>
