@@ -72,7 +72,14 @@
             watch(
                 () => route.params.category,
                 (newCategory) => {
-                    console.log('category', newCategory);
+                    $('.portfolio__filter').children().each((index, element) => {
+                        if (index == 0) {
+                            element.classList.add("active");
+                        } else {
+                            element.classList.remove("active");
+                        }
+                    });
+
                     this.loadVideos(newCategory as string);
                 }
             )
