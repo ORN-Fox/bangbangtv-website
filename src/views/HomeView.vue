@@ -57,7 +57,7 @@
                             <span>Qui sommes</span>
                             <h2>nous ?</h2>
                         </div>
-                        <p>La BangBangTV est un studio amateur réalisant des vidéos, principalement des Machinimas et Montage dans l'univers de Halo. Leur humour et leur passion pour Halo en font une référence incontournable pour les fans de la série dans le domaine du Machinima.</p>
+                        <p>La BangBangTV est un studio amateur réalisant des vidéos, principalement des Machinimas et Montage dans l'univers de Halo.</p>
                         <a href="./portfolio.html" class="primary-btn">Voir nos réalisations</a>
                     </div>
                 </div>
@@ -70,8 +70,7 @@
                                     <img src="../assets/img/icons/si-4.png" alt="">
                                 </div>
                                 <h4>Machinima</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>Court et long métrage sur tous les Halo.</p>
                             </div>
                         </div>
 
@@ -81,8 +80,7 @@
                                     <img src="../assets/img/icons/si-2.png" alt="">
                                 </div>
                                 <h4>Montage</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>Du gameplay mis en avant.</p>
                             </div>
                         </div>
 
@@ -92,8 +90,7 @@
                                     <img src="../assets/img/icons/si-1.png" alt="">
                                 </div>
                                 <h4>Projet communautaire </h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>Halove Machinima, Halo SF, Halo QG.</p>
                             </div>
                         </div>
                     </div>
@@ -168,16 +165,6 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__text">
-                                <img src="../assets/img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">120</h2>
-                                <p>Vidéos réalisées</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
                                 <img src="../assets/img/icons/ci-2.png" alt="">
                                 <h2 class="counter_num">15</h2>
                                 <p>Années d'expériences</p>
@@ -186,11 +173,21 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="../assets/img/icons/ci-1.png" alt="">
+                                <h2 class="counter_num">120</h2>
+                                <p>Vidéos réalisées</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item third__item">
                             <div class="counter__item__text">
                                 <img src="../assets/img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">12.4</h2>
-                                <p>Millions d'abonnées</p>
+                                <h2 class="counter_num">37</h2>
+                                <p>Court métrage</p>
                             </div>
                         </div>
                     </div>
@@ -199,8 +196,8 @@
                         <div class="counter__item four__item">
                             <div class="counter__item__text">
                                 <img src="../assets/img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">38.5</h2>
-                                <p>Millions de commentaires</p>
+                                <h2 class="counter_num">12</h2>
+                                <p>Long métrage</p>
                             </div>
                         </div>
                     </div>
@@ -375,7 +372,7 @@
                     <div class="callto__text">
                         <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
                         <p>INC5000, Best places to work 2019</p>
-                        <a href="#">Start your stories</a>
+                        <a href="https://www.youtube.com/@BangBangTV" target="_blank" rel="noopener">Découvrir la chaine <i class="fal fa-external-link"></i></a>
                     </div>
                 </div>
             </div>
