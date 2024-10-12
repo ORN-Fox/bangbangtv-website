@@ -59,10 +59,14 @@
 </template>
 
 <script lang="ts">
-    setTimeout(() => {
-        const currentYearElement = document.getElementById('currentYear');
-        if (currentYearElement) {
-            currentYearElement.innerText = new Date().getFullYear().toString();
+    import { Vue } from 'vue-class-component';
+
+    export default class PortfolioItem extends Vue {
+        mounted() {
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) {
+                currentYearElement.innerText = new Date().getFullYear().toString();
+            }
         }
-    }, 0);
+    }
 </script>
