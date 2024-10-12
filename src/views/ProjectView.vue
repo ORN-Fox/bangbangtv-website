@@ -169,7 +169,7 @@
                 new Video('other', 'Halo Info - Edition Janvier / Février', 'PWS7QybpV4Y', ['Halo Info']),
                 new Video('parody', 'Parodie Zalando (version Halo)', 'Sp1gtZ5-roU', []),
                 new Video('other', "Dur, dur d'être un héros", 'TBRfa-xT_nI', ['Animation']),
-                new Video('longMachinima', 'Vive Noël', '2Bww23aVESI', ['Noël']),
+                new Video('longMachinima', 'Vive Noël', '2Bww23aVESI', ['Noël'])
             ];
         }
 
@@ -192,9 +192,23 @@
 
         private loadOthers() {
             this.categories = [
+                new Category('Mr Bang', 'mrBang')
             ];
 
             this.videos = [
+                new Video('mrBang', 'Mr Bang - Le pire coéquipier du monde ! (Ep 12)', 'vgZVtn_psok', ['Mr Bang', 'Halo 3']),
+                new Video('mrBang', 'Mr Bang - Un drapeau au middle (Ep 11)', 'k-xOBqzSG0Q', ['Mr Bang', 'Halo 3']),
+                new Video('mrBang', 'Mr bang - Le vestiaire à grenades (Ep 10)', 'tMaem3caJzY', ['Mr Bang', 'Halo 2']),
+                new Video('mrBang', "Mr Bang - Trop d'amour en vous ! (HS 1)", 'k2iQa13Jb28', ['Mr Bang', 'Hors série']),
+                new Video('mrBang', 'Mr Bang - Vive Noël ! (Ep 8)', 'Xdsgxz_FREs', ['Mr Bang', 'Halo 4']),
+                new Video('mrBang', 'Mr Bang - Le pompe funèbre (Ep 7)', 'VHwQU6AZjGk', ['Mr Bang', 'Halo 5']),
+                new Video('mrBang', 'Mr Bang - Le putain de retour ! (Ep 6)', 'fOtNzYSsJJQ', ['Mr Bang', 'Halo 5']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 5', '9RMUAOg2Z8w', ['Mr Bang', 'Halo Reach']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 4', '9q9K0Tv0bpo', ['Mr Bang', 'Halo Reach']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 4', '9q9K0Tv0bpo', ['Mr Bang', 'Halo Reach']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 3', 'zUnier7xFjk', ['Mr Bang', 'Halo Reach']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 2', 'jvIap_rl6F8', ['Mr Bang', 'Halo Reach']),
+                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 1', 'HlasGNgLNiY', ['Mr Bang', 'Halo Reach'])
             ];
         }
 
