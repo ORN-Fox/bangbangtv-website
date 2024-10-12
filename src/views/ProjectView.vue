@@ -40,7 +40,7 @@
 <script lang="ts">
     import { Options, Vue } from 'vue-class-component';
     import { reactive, watch } from 'vue';
-    import { useRoute } from 'vue-router';
+    import { useRoute, useRouter } from 'vue-router';
     import $ from 'jquery';
     import mixitup from 'mixitup';
 
@@ -98,6 +98,12 @@
                 case "others":
                     this.loadOthers();
                     break;
+
+                default: {
+                    const router = useRouter();
+                    router.push({ path: '/projects/machinima', replace: true });
+                    return;
+                }
             }
 
             this.initBackgroundManagementAndMixitup();
