@@ -382,7 +382,7 @@
 </template>
 
 <script lang="ts">
-  import { Options, Vue } from 'vue-class-component';
+  import { Vue } from 'vue-class-component';
   import $ from 'jquery';
   import 'owl.carousel';
   import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -393,7 +393,7 @@
             /*------------------
                 Background Set
             --------------------*/
-            $('.set-bg').each(function (_index, element) {
+            $('.set-bg').each((_index, element) => {
                 let bg = $(element).data('setbg');
                 $(element).css('background-image', 'url(' + bg + ')');
             });
@@ -414,8 +414,7 @@
                 autoplay: true,
             });
 
-            let dot = $('.hero__slider .owl-dot');
-            dot.each(function (_index, element) {
+            $('.hero__slider .owl-dot').each((_index, element) => {
                 let index: any = $(element).index() + 1;
                 if (index < 10) {
                     $(element).html('0').append(index);
