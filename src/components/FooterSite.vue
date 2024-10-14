@@ -9,7 +9,7 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__social">
-                            <a href="https://www.facebook.com/bangbangtv" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://www.facebook.com/bangbangtv" target="_blank" rel="noopener"><i class="fab fa-facebook-f fa-lg"></i></a>
                             <a href="https://www.youtube.com/@BangBangTV" target="_blank" rel="noopener"><i class="fab fa-youtube fa-lg"></i></a>
                         </div>
                     </div>
