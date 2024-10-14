@@ -370,8 +370,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="callto__text">
-                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
-                        <p>INC5000, Best places to work 2019</p>
+                        <h2>Des histoires, des émotions dans l'univers d'Halo</h2>
+                        <p></p>
                         <a href="https://www.youtube.com/@BangBangTV" target="_blank" rel="noopener">Découvrir la chaine <i class="fal fa-external-link"></i></a>
                     </div>
                 </div>
