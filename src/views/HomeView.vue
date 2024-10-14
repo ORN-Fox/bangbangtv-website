@@ -104,52 +104,53 @@
     <section class="work">
         <div class="work__gallery">
             <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="/img/work/work-1.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item wide__item set-bg" data-setbg="https://i.ytimg.com/vi/qB2nYn-Spqw/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=qB2nYn-Spqw" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Noestalgie</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Noël</li>
+                        <li>Machinima</li>
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="/img/work/work-2.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="https://i.ytimg.com/vi/V96XgahsEk0/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=V96XgahsEk0" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="/img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="https://i.ytimg.com/vi/nv_wulKR7QQ/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=nv_wulKR7QQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item large__item set-bg" data-setbg="/img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item large__item set-bg" data-setbg="https://i.ytimg.com/vi/DSYGtV_ovzM/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=DSYGtV_ovzM" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Opération Chronos - Épisode 3</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Halove Machinima</li>
+                        <li>Halo SF</li>
+                        <li>Machinima</li>
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="/img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="https://i.ytimg.com/vi/Y-7XG_rkaeQ/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=Y-7XG_rkaeQ" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="/img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="https://i.ytimg.com/vi/7NOjawuqIDg/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=7NOjawuqIDg" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item wide__item set-bg" data-setbg="/img/work/work-7.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item wide__item set-bg" data-setbg="https://i.ytimg.com/vi/kOI4uZ0LBe8/hqdefault.jpg">
+                <a href="https://www.youtube.com/watch?v=kOI4uZ0LBe8" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Le monde de Noël</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Noël</li>
+                        <li>Machinima</li>
                     </ul>
                 </div>
             </div>
@@ -386,6 +387,8 @@
   import $ from 'jquery';
   import 'owl.carousel';
   import 'owl.carousel/dist/assets/owl.carousel.css';
+  import 'magnific-popup';
+  import 'magnific-popup/dist/magnific-popup.css';
   import Masonry from 'masonry-layout';
 
   export default class HomeView extends Vue {
@@ -428,6 +431,13 @@
                 itemSelector: '.work__item',
                 columnWidth: '.grid-sizer',
                 gutter: 10
+            });
+
+            /*------------------
+                Video Popup
+            --------------------*/
+            ($('.video-popup') as any).magnificPopup({
+                type: 'iframe'
             });
         }
   }
