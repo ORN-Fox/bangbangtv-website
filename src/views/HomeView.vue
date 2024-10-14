@@ -247,7 +247,7 @@
 
                 <div class="col-lg-12 p-0">
                     <div class="team__btn">
-                        <a href="#" class="primary-btn">Rencontrez notre équipe</a>
+                        <router-link to="/about" class="primary-btn">Rencontrez notre équipe</router-link>
                     </div>
                 </div>
             </div>
