@@ -1,5 +1,9 @@
 # bangbangtv-website
 
+## 🖼 Preview
+
+![Home page](preview.png)
+
 ## Project setup
 ```
 npm install
