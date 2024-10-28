@@ -41,6 +41,8 @@
     import { Options, Vue } from 'vue-class-component';
     import { reactive, watch } from 'vue';
     import { useRoute, useRouter } from 'vue-router';
+    import 'magnific-popup';
+    import 'magnific-popup/dist/magnific-popup.css';
     import $ from 'jquery';
     import mixitup from 'mixitup';
 
@@ -82,7 +84,7 @@
 
                     this.loadVideos(newCategory as string);
                 }
-            )
+            );
         }
 
         private loadVideos(category: string) {
@@ -107,6 +109,7 @@
             }
 
             this.initBackgroundManagementAndMixitup();
+            this.initMaginificPopup();
         }
 
         private initBackgroundManagementAndMixitup() {
@@ -135,6 +138,14 @@
                     this.mixer = mixitup(containerEl);
                 }
             }, 0);
+        }
+
+        private initMaginificPopup() {
+          setTimeout(() => {
+            ($('.video-popup') as any).magnificPopup({
+                type: 'iframe'
+            });
+          }, 0);
         }
 
         private loadMachinimas() {
