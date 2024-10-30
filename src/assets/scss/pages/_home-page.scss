@@ -411,19 +411,6 @@
   padding-bottom: 80px;
 }
 
-.blog__item {
-
-  &.latest__item {
-    margin-bottom: 0;
-
-      &:hover {
-        border: 1px solid #222222!important;
-        background: url(/src/assets/img/blog/blog-1.jpg);
-        background-size: cover;
-    }
-  }
-}
-
 .latest__slider {
 
   &.owl-carousel {
