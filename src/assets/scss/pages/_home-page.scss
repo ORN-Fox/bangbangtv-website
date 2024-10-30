@@ -498,5 +498,9 @@
     text-transform: uppercase;
     display: inline-block;
     padding: 14px 32px 12px;
+
+    &:hover {
+      color: $white-color !important;
+    }
   }
 }

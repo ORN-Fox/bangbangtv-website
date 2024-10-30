@@ -12,14 +12,16 @@
   li {
     list-style: none;
     font-size: 16px;
+    border: 1px solid transparent;
     color: #adadad;
     margin-right: 5px;
     display: inline-block;
     cursor: pointer;
     padding: 6px 22px;
-    
-    &.active {
+
+    &.active, &:hover {
       border: 1px solid $primary-color;
+      color: $white-color;
     }
 
     &:last-child {

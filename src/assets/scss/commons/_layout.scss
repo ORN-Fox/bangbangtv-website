@@ -190,6 +190,7 @@ ol {
   z-index: 1;
 
   &:hover {
+    color: $white-color !important;
 
     &:before {
       height: 100%;
