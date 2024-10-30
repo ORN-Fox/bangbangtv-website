@@ -176,12 +176,10 @@
                 new Video('shortMachinima', 'Des vacances qui commencent bien !', 'FGf0fG81ip8', []),
                 new Video('longMachinima', "Un Noël d'Enfer", 'Y-7XG_rkaeQ', ['Noël']),
                 new Video('longMachinima', 'Halo 4 Débarque', 'qgSutyTZnUI', []),
-                new Video('other', 'La Connec Mec', 'GWSnL82S16I', ['Chanson']),
                 new Video('longMachinima', 'Halomon (Épisode 2)', 'T0B6vWWNcoc', ['Halomon']),
                 new Video('shortMachinima', 'Le meilleur jeu de tous les temps - Bande Annonce', '0kBP9VqbeFk', ['']),
                 new Video('longMachinima', 'Un Noël à tout prix', 'rAcqUGI3x7U', []),
                 new Video('shortMachinima', 'Joyeux Anniversaire la BBTV!', 'dwQ4mv8CaQg', ['Anniversaire']),
-                new Video('other', 'Je joue comme un pro', 'JnYa6byJ9GI', ['Chanson']),
                 new Video('shortMachinima', 'Halo Info - Edition Septembre / Octobre', '3fWK64AopAQ', ['Halo Info']),
                 new Video('longMachinima', 'Le guide Halo du petit Machinéaste (Tuto pour Machinima)', 'Cb3RNpHs71g', ['Tuto']),
                 new Video('longMachinima', 'Halomon (Épisode 1)', 'sRoPYTi3Z7U', ['Halomon']),
@@ -220,7 +218,8 @@
 
         private loadOthers() {
             this.categories = [
-                new Category('Mr Bang', 'mrBang')
+                new Category('Mr Bang', 'mrBang'),
+                new Category('Chanson', 'song')
             ];
 
             this.videos = [
@@ -232,8 +231,9 @@
                 new Video('mrBang', 'Mr Bang - Le pompe funèbre (Ep 7)', 'VHwQU6AZjGk', ['Mr Bang', 'Halo 5']),
                 new Video('mrBang', 'Mr Bang - Le putain de retour ! (Ep 6)', 'fOtNzYSsJJQ', ['Mr Bang', 'Halo 5']),
                 new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 5', '9RMUAOg2Z8w', ['Mr Bang', 'Halo Reach']),
+                new Video('song', 'La Connec Mec', 'GWSnL82S16I', ['Chanson']),
                 new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 4', '9q9K0Tv0bpo', ['Mr Bang', 'Halo Reach']),
-                new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 4', '9q9K0Tv0bpo', ['Mr Bang', 'Halo Reach']),
+                new Video('song', 'Je joue comme un pro', 'JnYa6byJ9GI', ['Chanson']),
                 new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 3', 'zUnier7xFjk', ['Mr Bang', 'Halo Reach']),
                 new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 2', 'jvIap_rl6F8', ['Mr Bang', 'Halo Reach']),
                 new Video('mrBang', 'Les Commentaires de Mr Bang - Episode 1', 'HlasGNgLNiY', ['Mr Bang', 'Halo Reach'])
