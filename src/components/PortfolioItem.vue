@@ -26,7 +26,10 @@
             category: String,
             videoHash: String,
             title: String,
-            tags: Array<string>()
+            tags: {
+              type: Array,
+              default: () => []
+            }
         }
     })
     export default class PortfolioItem extends Vue {
