@@ -9,7 +9,7 @@
                             <div class="hero__text">
                                 <span>Épisode Finale</span>
                                 <h2>Opération Chronos</h2>
-                                <a href="#" class="primary-btn">Voir l'épisode</a>
+                                <a href="https://www.youtube.com/watch?v=DSYGtV_ovzM" class="primary-btn video-popup">Voir l'épisode</a>
                             </div>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                             <div class="hero__text">
                                 <span>Tout le monde vie a la nostalgie</span>
                                 <h2>Noëlstalgie</h2>
-                                <a href="#" class="primary-btn">Voir le machinima</a>
+                                <a href="https://www.youtube.com/watch?v=qB2nYn-Spqw" class="primary-btn video-popup">Voir le machinima</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             <div class="hero__text">
                                 <span>Seul les pierres sont polies</span>
                                 <h2>Le monde de Noël</h2>
-                                <a href="#" class="primary-btn">Voir le machinima</a>
+                                <a href="https://www.youtube.com/watch?v=kOI4uZ0LBe8" class="primary-btn video-popup">Voir le machinima</a>
                             </div>
                         </div>
                     </div>
