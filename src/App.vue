@@ -12,22 +12,28 @@
 </style>
 
 <script lang="ts">
-  import { Options, Vue } from 'vue-class-component';
+  import { defineComponent } from 'vue';
   import $ from 'jquery';
 
   import FooterSite from '@/components/FooterSite.vue'; // @ is an alias to /src
   import HeaderSite from '@/components/HeaderSite.vue';
   import PagePreloader from '@/components/PagePreloader.vue';
 
-  (window as any).$ = $;
-  (window as any).jQuery = $;
+  declare global {
+    interface Window {
+      $: typeof $;
+      jQuery: typeof $;
+    }
+  }
 
-  @Options({
+  window.$ = $;
+  window.jQuery = $;
+
+  export default defineComponent({
     components: {
-        FooterSite,
-        HeaderSite,
-        PagePreloader
+      FooterSite,
+      HeaderSite,
+      PagePreloader,
     },
-  })
-  export default class App extends Vue {}
+  });
 </script>

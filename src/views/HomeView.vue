@@ -272,63 +272,69 @@
     <!-- Call To Action Section End -->
 </template>
 
+<style lang="scss">
+    @import url('magnific-popup/dist/magnific-popup.css');
+    @import url('owl.carousel/dist/assets/owl.carousel.css');
+</style>
+
 <script lang="ts">
-  import { Vue } from 'vue-class-component';
+  import { defineComponent, onMounted } from 'vue';
   import $ from 'jquery';
   import 'owl.carousel';
-  import 'owl.carousel/dist/assets/owl.carousel.css';
   import 'magnific-popup';
-  import 'magnific-popup/dist/magnific-popup.css';
   import Masonry from 'masonry-layout';
 
-  export default class HomeView extends Vue {
-        mounted() {
-            /*------------------
-                Background Set
-            --------------------*/
-            $('.set-bg').each((_index, element) => {
-                let bg = $(element).data('setbg');
-                $(element).css('background-image', 'url(' + bg + ')');
-            });
+  export default defineComponent({
+    name: 'HomeView',
+    setup() {
+      onMounted(() => {
+        /*------------------
+            Background Set
+        --------------------*/
+        $('.set-bg').each((_index, element) => {
+          let bg = $(element).data('setbg');
+          $(element).css('background-image', 'url(' + bg + ')');
+        });
 
-            /*------------------
-                Hero Slider
-            --------------------*/
-            ($('.hero__slider') as any).owlCarousel({
-                loop: true,
-                dots: true,
-                mouseDrag: false,
-                animateOut: 'fadeOut',
-                animateIn: 'fadeIn',
-                items: 1,
-                margin: 0,
-                smartSpeed: 1200,
-                autoHeight: false,
-                autoplay: true,
-            });
+        /*------------------
+            Hero Slider
+        --------------------*/
+        $('.hero__slider').owlCarousel({
+          loop: true,
+          dots: true,
+          mouseDrag: false,
+          animateOut: 'fadeOut',
+          animateIn: 'fadeIn',
+          items: 1,
+          margin: 0,
+          smartSpeed: 1200,
+          autoHeight: false,
+          autoplay: true,
+        });
 
-            $('.hero__slider .owl-dot').each((_index, element) => {
-                let index: any = $(element).index() + 1;
-                if (index < 10) {
-                    $(element).html('0').append(index);
-                } else {
-                    $(element).html(index);
-                }
-            });
+        $('.hero__slider .owl-dot').each((_index, element) => {
+          let index: any = $(element).index() + 1;
+          if (index < 10) {
+            $(element).html('0').append(index);
+          } else {
+            $(element).html(index);
+          }
+        });
 
-            // Masonary
-            new Masonry('.work__gallery', {
-                itemSelector: '.work__item',
-                columnWidth: '.grid-sizer',
-                gutter: 10
-            });
+        // Masonary
+        new Masonry('.work__gallery', {
+          itemSelector: '.work__item',
+          columnWidth: '.grid-sizer',
+          gutter: 10,
+        });
 
-            /*------------------
-                Video Popup
-            --------------------*/
-            ($('.video-popup') as any).magnificPopup({
-                type: 'iframe'
-            });
-        }
-  }
+        /*------------------
+            Video Popup
+        --------------------*/
+        $('.video-popup').magnificPopup({
+          type: 'iframe',
+        });
+      });
+    },
+  });
 </script>

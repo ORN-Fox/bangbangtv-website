@@ -19,23 +19,18 @@
 </template>
 
 <script lang="ts">
-    import { Options, Vue } from 'vue-class-component';
+    import { defineComponent } from 'vue';
 
-    @Options({
-        props: {
-            category: String,
-            videoHash: String,
-            title: String,
-            tags: {
-              type: Array,
-              default: () => []
-            }
-        }
-    })
-    export default class PortfolioItem extends Vue {
-        category!: string;
-        videoHash!: string;
-        title!: string;
-        tags!: [];
-    }
+    export default defineComponent({
+      name: 'PortfolioItem',
+      props: {
+        category: String,
+        videoHash: String,
+        title: String,
+        tags: {
+          type: Array,
+          default: () => [],
+        },
+      },
+    });
 </script>

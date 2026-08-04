@@ -59,14 +59,17 @@
 </template>
 
 <script lang="ts">
-    import { Vue } from 'vue-class-component';
+    import { defineComponent, onMounted } from 'vue';
 
-    export default class PortfolioItem extends Vue {
-        mounted() {
-            const currentYearElement = document.getElementById('currentYear');
-            if (currentYearElement) {
-                currentYearElement.innerText = new Date().getFullYear().toString();
-            }
-        }
-    }
+    export default defineComponent({
+      name: 'FooterSite',
+      setup() {
+        onMounted(() => {
+          const currentYearElement = document.getElementById('currentYear');
+          if (currentYearElement) {
+            currentYearElement.innerText = new Date().getFullYear().toString();
+          }
+        });
+      },
+    });
 </script>

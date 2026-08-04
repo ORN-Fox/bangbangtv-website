@@ -63,25 +63,26 @@
 </template>
 
 <script lang="ts">
-    import { Options, Vue } from 'vue-class-component';
+    import { defineComponent, onMounted } from 'vue';
     import $ from 'jquery';
 
     import BreadcrumbSite from '@/components/BreadcrumbSite.vue'; // @ is an alias to /src
 
-    @Options({
-        components: {
-            BreadcrumbSite,
-        },
-    })
-    export default class AboutView extends Vue {
-        mounted() {
-            /*------------------
-                Background Set
-            --------------------*/
-            $('.set-bg').each(function (_index, element) {
-                let bg = $(element).data('setbg');
-                $(element).css('background-image', 'url(' + bg + ')');
-            });
-        }
-    }
+    export default defineComponent({
+      name: 'AboutView',
+      components: {
+        BreadcrumbSite,
+      },
+      setup() {
+        onMounted(() => {
+          /*------------------
+              Background Set
+          --------------------*/
+          $('.set-bg').each(function (_index, element) {
+            let bg = $(element).data('setbg');
+            $(element).css('background-image', 'url(' + bg + ')');
+          });
+        });
+      },
+    });
 </script>

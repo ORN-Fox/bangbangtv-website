@@ -17,14 +17,12 @@
 </template>
 
 <script lang="ts">
-    import { Options, Vue } from 'vue-class-component';
+    import { defineComponent } from 'vue';
 
-    @Options({
-        props: {
-            pageTitle: String
-        }
-    })
-    export default class BreadcrumbSite extends Vue {
-        pageTitle!: string
-    }
+    export default defineComponent({
+      name: 'BreadcrumbSite',
+      props: {
+        pageTitle: String,
+      },
+    });
 </script>
