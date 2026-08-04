@@ -8,7 +8,7 @@
 </template>
 
 <style lang="scss">
-// scss
+  @import url('bootstrap/dist/css/bootstrap.min.css');
 </style>
 
 <script lang="ts">
